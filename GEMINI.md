@@ -55,3 +55,15 @@ This project is version-controlled using Git. The central "source of truth" is a
 - **Development** occurs in this local environment. Changes are committed and pushed to the remote repository.
 - **Deployment** on the live Home Assistant environment is done by pulling the latest changes from the remote repository.
 - The use of SSH keys should prevent the need for repeated password or token entry.
+
+# Current Project Status (As of Today)
+
+Today, we successfully established the foundational workflow for our collaboration:
+*   **Git Repository Setup:** Successfully initialized a Git repository, connected it to your GitHub remote, and configured SSH key authentication. This provides a robust version control and synchronization mechanism.
+*   **Documentation Created:**
+    *   `HAnodeRED_MQTT.md`: Contains a basic Node-RED flow JSON for monitoring MQTT button presses.
+    *   `NodeRED_GitHub_Workflow.md`: Provides a comprehensive guide on how to import flows from GitHub into Node-RED and how to export your Node-RED environment details.
+*   **Home Assistant Access:** You successfully regained access to your Home Assistant web interface, rendering the password reset unnecessary for now. We also debugged and enabled SSH access to your HA instance, which is now ready for future CLI interactions.
+
+**Next Steps Planned:**
+The immediate next step is for you to export details about your Node-RED environment (installed modules and non-sensitive configuration) and add them to the Git repository, as detailed in `NodeRED_GitHub_Workflow.md`. This will allow me to tailor any future Node-RED flows specifically to your setup.
