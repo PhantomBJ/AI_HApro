@@ -47,10 +47,11 @@ pytest
 
 # Version Control
 
-This project is version-controlled using Git. The central "source of truth" is a remote repository hosted on GitHub.
+This project is version-controlled using Git. The central "source of truth" is a remote repository hosted on GitHub, and authentication is managed via SSH keys.
 
-*   **Remote URL:** `https://github.com/PhantomBJ/AI_HApro.git`
+*   **Remote URL (SSH):** `git@github.com:PhantomBJ/AI_HApro.git`
 
 ### Synchronization Workflow
 - **Development** occurs in this local environment. Changes are committed and pushed to the remote repository.
 - **Deployment** on the live Home Assistant environment is done by pulling the latest changes from the remote repository.
+- The use of SSH keys should prevent the need for repeated password or token entry.
