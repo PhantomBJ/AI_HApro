@@ -22,8 +22,10 @@ The project is documentation-driven, serving as a central repository for:
 
 Key documentation files:
 - `HAnodeRED_MQTT.md`: Example Node-RED flows for MQTT button monitoring
-- `NodeRED_GitHub_Workflow.md`: Import/export workflows for Node-RED flows via Git
+- `NodeRED_GitHub_Workflow.md`: Import/export workflows for Node-RED flows via Git (technical reference)
+- `NodeRED_Steps.md`: Beginner-friendly step-by-step guide for Git setup and importing flows
 - `GEMINI.md`: Project context and status (maintained by another AI assistant)
+- `COMMAND_LOG.md`: Useful commands and access patterns discovered during sessions
 
 ## Version Control Workflow
 
@@ -63,6 +65,10 @@ git pull origin master
 - MQTT nodes reference broker configuration nodes by ID
 - Always include a note about required user configuration (broker addresses, topics)
 
+**User Documentation:**
+- For technical users familiar with Git: Reference `NodeRED_GitHub_Workflow.md`
+- For beginners: Direct them to `NodeRED_Steps.md` for complete setup instructions
+
 ## Architecture Notes
 
 **MQTT Integration:**
@@ -88,5 +94,13 @@ The primary development environment is located at `/root/AIpro`. The `~/.bashrc`
 
 Home Assistant instance is accessible via:
 - Web interface for configuration
-- SSH for command-line access
+- SSH for command-line access (see `COMMAND_LOG.md` for SSH command)
 - Node-RED UI for flow editing
+
+## Custom Agents
+
+This repository has specialized Claude Code agents configured in `.claude/agents/`:
+- **homelab-mentor**: Use for Home Assistant, Node-RED, Raspberry Pi 5, and homelab infrastructure guidance
+- **gemini-researcher**: Use for web research, documentation lookup, and gathering current information
+
+When creating documentation or guides for homelab topics, prefer using the homelab-mentor agent.
